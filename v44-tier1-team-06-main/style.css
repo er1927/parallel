@@ -119,20 +119,14 @@ button,
   flex-direction: column;
 }
 .leaderboard {
-  /* padding: 20px; */
-  height: 180px;
+  padding: 20px;
   display: flex;
-}
-i {
-  padding: 0;
-  margin: 0;
 }
 .big-icon {
   color: #f57ba7;
   text-shadow: 2px 2px black;
   font-size: 50px;
   padding: 20px;
-  align-self: center;
 }
 .tally-by-scenario {
   display: flex;
@@ -171,12 +165,29 @@ i {
 .shaded {
   background-color: aquamarine;
 }
-.purple {
-  background-color: purple;
+
+.no-match {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 30%;
+  width: 33%;
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(251, 178, 68, 0.9);
+  border-radius: 10px;
 }
+
+.fa-xmark {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 footer {
   text-align: center;
   padding-top: 20px;
 }
-
 
