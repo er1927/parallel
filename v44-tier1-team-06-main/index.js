@@ -92,6 +92,10 @@ const checkIfAllShaded = () => {
         diceOne.style.display = "none";
         diceTwo.style.display = "none";
         timerDiv.style.display = "none";
+        // adds a point to total wins
+        totalWins += 1;
+        // adds a point to full grid wins
+        winsFullGrid += 1;
     }
 }
 
