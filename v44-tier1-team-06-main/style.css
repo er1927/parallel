@@ -171,7 +171,9 @@ i {
 .shaded {
   background-color: aquamarine;
 }
-
+.purple {
+  background-color: purple;
+}
 footer {
   text-align: center;
   padding-top: 20px;

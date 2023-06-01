@@ -66,6 +66,13 @@ clearButton.addEventListener("click", () => {
     clickedCells = [];
 });
 
+// CLEAR GRID FUNCTION
+function clearGrid() {
+    cells.forEach((cell) => {
+        cell.classList.remove("shaded");
+    });
+}
+
 // FULL GRID WIN CONDITION
 // create an array from the cells node list
 const cellsArray = Array.from(cells);
@@ -101,8 +108,7 @@ resetTimer();
  winsFullGrid = 0;
  displayScore();
 //clear the grid:
-clickedCells.forEach((cell) => {cell.classList.toggle("shaded");});
-    clickedCells = [];
+clearGrid();
 }); 
 
 // -------- DICE ROLLER -------- //
