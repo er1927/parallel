@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Array Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-panel">
+            <div>
+                <h1>The array game!</h1>
+            </div>
+                <div class="message-container hidden">
+                    <h2 class="message"></h2>
+                </div>
+                <div class="buttons-container">
+                    <button type="button" class="button-new">new game!</button>
+                    <div class="roll-button-dice-container">
+                        <button type="button" class="button-roll" onclick="resetTimer()">roll</button>
+                        <!-- PLACEHOLDER DICE EXAMPLES -->
+                        <i class="fa-solid fa-dice-one die placeholder"></i>
+                        <i class="fa-solid fa-dice-three die placeholder"></i>
+                        
+                        <!-- DYNAMICALLY GENERATED DIE -->
+                        <div class="dice-area">
+                            <img class="dice-one" />
+                        </div>
+                        <div class="dice-area">
+                            <img class="dice-two"/>
+                        </div>
+                    </div> 
+                    <div class="clear-submit-buttons-container">
+                        <button type="button" class="button-clear">clear</button><br> 
+                    <button type="button" class="button-submit">submit</button><br>
+                    </div>
+                    <div class="timer">60</div>
+                </div> 
+            </div>
+            <div class="right-panel">
+                <div class="leaderboard">
+                    <div class="tally-win-lose">
+                        <i class="fa-solid fa-trophy big-icon"><p id="totalWinsIcon"></p></i>
+                        <i class="fa-solid fa-heart-crack big-icon"><p id="totalLosesIcon"></p></i>
+                        <p class="totalPointsTracker"></p>
+                    </div>
+                    <div class="tally-by-scenario">
+                        <div class="time-scenario">
+                            <i class="fa-solid fa-hourglass-end small-icon"><p id="losesTimerIcon"></p></i>
+                            <!-- Depending on how we go about it, here could go the display of games lost because the rounds ended -->
+                            <p></p>
+                        </div>
+                        <div class="full-grid-scenario">
+                            <i class="fa-solid fa-square small-icon"><p id="winsFullGridIcon"></p></i>
+                            <!-- Depending on how we go about it, here could go the display of games won because the player filled the entire grid -->
+                            <p></p>
+                        </div>
+                        <div class="forfeit-scenario">
+                            <i class="fa-solid fa-font-awesome small-icon"><p id="losesForfeitIcon"></p></i>
+                            <!-- Depending on how we go about it, here could go the display of games lost because of forfeiting -->
+                            <p class="losePointsTracker"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GRID -->
+            <div class="grid">
+                <div class="container"></div>
+            </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <footer>
+        <i class="fa-brands fa-github"></i>
+    </footer>
+    <script src="https://kit.fontawesome.com/cb5469bf64.js" crossorigin="anonymous"></script>
+</body>
+</html>
